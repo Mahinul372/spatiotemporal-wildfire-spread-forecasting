@@ -1,0 +1,1979 @@
+{
+  "source": "https://zenodo.org/api/records/8006177/files/WildfireSpreadTS.zip/content",
+  "files": [
+    {
+      "name": "2018/fire_21889943/2018-07-24.tif",
+      "status": "downloaded",
+      "bytes": 3130504
+    },
+    {
+      "name": "2018/fire_21889943/2018-07-26.tif",
+      "status": "downloaded",
+      "bytes": 3152481
+    },
+    {
+      "name": "2018/fire_21889943/2018-07-23.tif",
+      "status": "downloaded",
+      "bytes": 3148328
+    },
+    {
+      "name": "2018/fire_21889943/2018-07-25.tif",
+      "status": "downloaded",
+      "bytes": 3129688
+    },
+    {
+      "name": "2018/fire_21889943/2018-07-27.tif",
+      "status": "downloaded",
+      "bytes": 3183566
+    },
+    {
+      "name": "2018/fire_21889943/2018-07-28.tif",
+      "status": "downloaded",
+      "bytes": 2664104
+    },
+    {
+      "name": "2018/fire_21889943/2018-07-30.tif",
+      "status": "downloaded",
+      "bytes": 3152766
+    },
+    {
+      "name": "2018/fire_21889943/2018-07-29.tif",
+      "status": "downloaded",
+      "bytes": 3122551
+    },
+    {
+      "name": "2018/fire_21889943/2018-07-31.tif",
+      "status": "downloaded",
+      "bytes": 3144906
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-02.tif",
+      "status": "downloaded",
+      "bytes": 3126091
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-03.tif",
+      "status": "downloaded",
+      "bytes": 3164403
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-01.tif",
+      "status": "downloaded",
+      "bytes": 3149296
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-04.tif",
+      "status": "downloaded",
+      "bytes": 3180972
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-05.tif",
+      "status": "downloaded",
+      "bytes": 3130576
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-06.tif",
+      "status": "downloaded",
+      "bytes": 3148256
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-07.tif",
+      "status": "downloaded",
+      "bytes": 3117586
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-08.tif",
+      "status": "downloaded",
+      "bytes": 3144966
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-10.tif",
+      "status": "downloaded",
+      "bytes": 3141253
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-09.tif",
+      "status": "downloaded",
+      "bytes": 3131955
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-11.tif",
+      "status": "downloaded",
+      "bytes": 3179190
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-12.tif",
+      "status": "downloaded",
+      "bytes": 3154061
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-15.tif",
+      "status": "downloaded",
+      "bytes": 3125974
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-13.tif",
+      "status": "downloaded",
+      "bytes": 3113327
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-14.tif",
+      "status": "downloaded",
+      "bytes": 3139911
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-16.tif",
+      "status": "downloaded",
+      "bytes": 3139349
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-18.tif",
+      "status": "downloaded",
+      "bytes": 3131692
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-17.tif",
+      "status": "downloaded",
+      "bytes": 3167204
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-19.tif",
+      "status": "downloaded",
+      "bytes": 3109844
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-20.tif",
+      "status": "downloaded",
+      "bytes": 3138296
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-22.tif",
+      "status": "downloaded",
+      "bytes": 3133119
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-24.tif",
+      "status": "downloaded",
+      "bytes": 3173314
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-23.tif",
+      "status": "downloaded",
+      "bytes": 3163387
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-21.tif",
+      "status": "downloaded",
+      "bytes": 3121279
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-25.tif",
+      "status": "downloaded",
+      "bytes": 3210999
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-26.tif",
+      "status": "downloaded",
+      "bytes": 3182336
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-28.tif",
+      "status": "downloaded",
+      "bytes": 3145318
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-27.tif",
+      "status": "downloaded",
+      "bytes": 3165886
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-29.tif",
+      "status": "downloaded",
+      "bytes": 3137515
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-30.tif",
+      "status": "downloaded",
+      "bytes": 3127084
+    },
+    {
+      "name": "2018/fire_21889943/2018-08-31.tif",
+      "status": "downloaded",
+      "bytes": 3163206
+    },
+    {
+      "name": "2018/fire_21889943/2018-09-02.tif",
+      "status": "downloaded",
+      "bytes": 3138263
+    },
+    {
+      "name": "2018/fire_21889943/2018-09-01.tif",
+      "status": "downloaded",
+      "bytes": 3142189
+    },
+    {
+      "name": "2018/fire_21889943/2018-09-03.tif",
+      "status": "downloaded",
+      "bytes": 3103443
+    },
+    {
+      "name": "2018/fire_21889943/2018-09-04.tif",
+      "status": "downloaded",
+      "bytes": 3136893
+    },
+    {
+      "name": "2018/fire_21889943/2018-09-05.tif",
+      "status": "downloaded",
+      "bytes": 3151561
+    },
+    {
+      "name": "2018/fire_21889943/2018-09-06.tif",
+      "status": "downloaded",
+      "bytes": 3152708
+    },
+    {
+      "name": "2018/fire_21890524/2018-07-27.tif",
+      "status": "downloaded",
+      "bytes": 3168114
+    },
+    {
+      "name": "2018/fire_21890524/2018-07-28.tif",
+      "status": "downloaded",
+      "bytes": 2641667
+    },
+    {
+      "name": "2018/fire_21890524/2018-07-29.tif",
+      "status": "downloaded",
+      "bytes": 3100889
+    },
+    {
+      "name": "2018/fire_21890524/2018-07-30.tif",
+      "status": "downloaded",
+      "bytes": 3132315
+    },
+    {
+      "name": "2018/fire_21890524/2018-07-31.tif",
+      "status": "downloaded",
+      "bytes": 3124624
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-01.tif",
+      "status": "downloaded",
+      "bytes": 3146858
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-02.tif",
+      "status": "downloaded",
+      "bytes": 3123045
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-05.tif",
+      "status": "downloaded",
+      "bytes": 3114096
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-03.tif",
+      "status": "downloaded",
+      "bytes": 3176337
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-04.tif",
+      "status": "downloaded",
+      "bytes": 3194016
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-06.tif",
+      "status": "downloaded",
+      "bytes": 3128989
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-07.tif",
+      "status": "downloaded",
+      "bytes": 3118415
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-08.tif",
+      "status": "downloaded",
+      "bytes": 3121906
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-09.tif",
+      "status": "downloaded",
+      "bytes": 3115688
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-10.tif",
+      "status": "downloaded",
+      "bytes": 3125293
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-11.tif",
+      "status": "downloaded",
+      "bytes": 3165474
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-12.tif",
+      "status": "downloaded",
+      "bytes": 3143799
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-13.tif",
+      "status": "downloaded",
+      "bytes": 3075947
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-14.tif",
+      "status": "downloaded",
+      "bytes": 3095529
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-15.tif",
+      "status": "downloaded",
+      "bytes": 3115285
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-16.tif",
+      "status": "downloaded",
+      "bytes": 3100741
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-18.tif",
+      "status": "downloaded",
+      "bytes": 3097529
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-17.tif",
+      "status": "downloaded",
+      "bytes": 3131102
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-19.tif",
+      "status": "downloaded",
+      "bytes": 3088232
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-20.tif",
+      "status": "downloaded",
+      "bytes": 3116544
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-21.tif",
+      "status": "downloaded",
+      "bytes": 3085080
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-22.tif",
+      "status": "downloaded",
+      "bytes": 3108137
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-24.tif",
+      "status": "downloaded",
+      "bytes": 3160721
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-23.tif",
+      "status": "downloaded",
+      "bytes": 3146716
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-25.tif",
+      "status": "downloaded",
+      "bytes": 3181733
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-26.tif",
+      "status": "downloaded",
+      "bytes": 3201058
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-27.tif",
+      "status": "downloaded",
+      "bytes": 3145500
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-28.tif",
+      "status": "downloaded",
+      "bytes": 3134947
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-29.tif",
+      "status": "downloaded",
+      "bytes": 3142118
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-31.tif",
+      "status": "downloaded",
+      "bytes": 3145215
+    },
+    {
+      "name": "2018/fire_21890524/2018-08-30.tif",
+      "status": "downloaded",
+      "bytes": 3129167
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-01.tif",
+      "status": "downloaded",
+      "bytes": 3135855
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-02.tif",
+      "status": "downloaded",
+      "bytes": 3131144
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-03.tif",
+      "status": "downloaded",
+      "bytes": 3111368
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-04.tif",
+      "status": "downloaded",
+      "bytes": 3093661
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-05.tif",
+      "status": "downloaded",
+      "bytes": 3120391
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-06.tif",
+      "status": "downloaded",
+      "bytes": 3120770
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-07.tif",
+      "status": "downloaded",
+      "bytes": 3201504
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-09.tif",
+      "status": "downloaded",
+      "bytes": 3188435
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-08.tif",
+      "status": "downloaded",
+      "bytes": 3143352
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-10.tif",
+      "status": "downloaded",
+      "bytes": 3211078
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-11.tif",
+      "status": "downloaded",
+      "bytes": 3189468
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-12.tif",
+      "status": "downloaded",
+      "bytes": 3173353
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-13.tif",
+      "status": "downloaded",
+      "bytes": 3180593
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-14.tif",
+      "status": "downloaded",
+      "bytes": 3190952
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-16.tif",
+      "status": "downloaded",
+      "bytes": 3227271
+    },
+    {
+      "name": "2018/fire_21890524/2018-09-15.tif",
+      "status": "downloaded",
+      "bytes": 3139490
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-12.tif",
+      "status": "downloaded",
+      "bytes": 2812684
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-13.tif",
+      "status": "downloaded",
+      "bytes": 2829276
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-14.tif",
+      "status": "downloaded",
+      "bytes": 2723658
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-15.tif",
+      "status": "downloaded",
+      "bytes": 2781705
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-16.tif",
+      "status": "downloaded",
+      "bytes": 2805015
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-17.tif",
+      "status": "downloaded",
+      "bytes": 2822534
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-19.tif",
+      "status": "downloaded",
+      "bytes": 2766223
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-18.tif",
+      "status": "downloaded",
+      "bytes": 2799191
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-20.tif",
+      "status": "downloaded",
+      "bytes": 2783583
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-23.tif",
+      "status": "downloaded",
+      "bytes": 2779930
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-21.tif",
+      "status": "downloaded",
+      "bytes": 2807538
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-22.tif",
+      "status": "downloaded",
+      "bytes": 2789299
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-24.tif",
+      "status": "downloaded",
+      "bytes": 2820265
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-25.tif",
+      "status": "downloaded",
+      "bytes": 2805028
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-27.tif",
+      "status": "downloaded",
+      "bytes": 2792215
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-26.tif",
+      "status": "downloaded",
+      "bytes": 2823622
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-28.tif",
+      "status": "downloaded",
+      "bytes": 2797834
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-29.tif",
+      "status": "downloaded",
+      "bytes": 2820329
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-30.tif",
+      "status": "downloaded",
+      "bytes": 2808301
+    },
+    {
+      "name": "2020/fire_24332764/2020-08-31.tif",
+      "status": "downloaded",
+      "bytes": 2809005
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-01.tif",
+      "status": "downloaded",
+      "bytes": 2815500
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-03.tif",
+      "status": "downloaded",
+      "bytes": 2803700
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-02.tif",
+      "status": "downloaded",
+      "bytes": 2788107
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-04.tif",
+      "status": "downloaded",
+      "bytes": 2733638
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-07.tif",
+      "status": "downloaded",
+      "bytes": 2764078
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-05.tif",
+      "status": "downloaded",
+      "bytes": 2737141
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-06.tif",
+      "status": "downloaded",
+      "bytes": 2756555
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-08.tif",
+      "status": "downloaded",
+      "bytes": 2758242
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-09.tif",
+      "status": "downloaded",
+      "bytes": 2748241
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-10.tif",
+      "status": "downloaded",
+      "bytes": 2780068
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-11.tif",
+      "status": "downloaded",
+      "bytes": 2762028
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-12.tif",
+      "status": "downloaded",
+      "bytes": 2805310
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-13.tif",
+      "status": "downloaded",
+      "bytes": 2777940
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-14.tif",
+      "status": "downloaded",
+      "bytes": 2798307
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-15.tif",
+      "status": "downloaded",
+      "bytes": 2774228
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-16.tif",
+      "status": "downloaded",
+      "bytes": 2759255
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-17.tif",
+      "status": "downloaded",
+      "bytes": 2812830
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-18.tif",
+      "status": "downloaded",
+      "bytes": 2755100
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-19.tif",
+      "status": "downloaded",
+      "bytes": 2779906
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-20.tif",
+      "status": "downloaded",
+      "bytes": 2764256
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-21.tif",
+      "status": "downloaded",
+      "bytes": 2808652
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-22.tif",
+      "status": "downloaded",
+      "bytes": 2808106
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-23.tif",
+      "status": "downloaded",
+      "bytes": 2737880
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-24.tif",
+      "status": "downloaded",
+      "bytes": 2738387
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-25.tif",
+      "status": "downloaded",
+      "bytes": 2742856
+    },
+    {
+      "name": "2020/fire_24332764/2020-09-26.tif",
+      "status": "downloaded",
+      "bytes": 2795915
+    },
+    {
+      "name": "2020/fire_24333000/2020-08-18.tif",
+      "status": "downloaded",
+      "bytes": 4250691
+    },
+    {
+      "name": "2020/fire_24333000/2020-08-19.tif",
+      "status": "downloaded",
+      "bytes": 4267332
+    },
+    {
+      "name": "2020/fire_24333000/2020-08-20.tif",
+      "status": "downloaded",
+      "bytes": 4244117
+    },
+    {
+      "name": "2020/fire_24333000/2020-08-22.tif",
+      "status": "downloaded",
+      "bytes": 4215459
+    },
+    {
+      "name": "2020/fire_24333000/2020-08-21.tif",
+      "status": "downloaded",
+      "bytes": 4231748
+    },
+    {
+      "name": "2020/fire_24333000/2020-08-23.tif",
+      "status": "downloaded",
+      "bytes": 4343272
+    },
+    {
+      "name": "2020/fire_24333000/2020-08-24.tif",
+      "status": "downloaded",
+      "bytes": 4350634
+    },
+    {
+      "name": "2020/fire_24333000/2020-08-26.tif",
+      "status": "downloaded",
+      "bytes": 4288480
+    },
+    {
+      "name": "2020/fire_24333000/2020-08-27.tif",
+      "status": "downloaded",
+      "bytes": 4252112
+    },
+    {
+      "name": "2020/fire_24333000/2020-08-25.tif",
+      "status": "downloaded",
+      "bytes": 4357576
+    },
+    {
+      "name": "2020/fire_24333000/2020-08-28.tif",
+      "status": "downloaded",
+      "bytes": 4272246
+    },
+    {
+      "name": "2020/fire_24333000/2020-08-29.tif",
+      "status": "downloaded",
+      "bytes": 4276201
+    },
+    {
+      "name": "2020/fire_24333000/2020-08-30.tif",
+      "status": "downloaded",
+      "bytes": 4211965
+    },
+    {
+      "name": "2020/fire_24333000/2020-08-31.tif",
+      "status": "downloaded",
+      "bytes": 4234388
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-01.tif",
+      "status": "downloaded",
+      "bytes": 4221020
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-03.tif",
+      "status": "downloaded",
+      "bytes": 4204596
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-02.tif",
+      "status": "downloaded",
+      "bytes": 4179662
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-04.tif",
+      "status": "downloaded",
+      "bytes": 4213910
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-05.tif",
+      "status": "downloaded",
+      "bytes": 4196114
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-06.tif",
+      "status": "downloaded",
+      "bytes": 4219797
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-07.tif",
+      "status": "downloaded",
+      "bytes": 4303377
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-09.tif",
+      "status": "downloaded",
+      "bytes": 4304432
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-08.tif",
+      "status": "downloaded",
+      "bytes": 4357662
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-10.tif",
+      "status": "downloaded",
+      "bytes": 4243345
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-11.tif",
+      "status": "downloaded",
+      "bytes": 4231614
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-12.tif",
+      "status": "downloaded",
+      "bytes": 4216644
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-13.tif",
+      "status": "downloaded",
+      "bytes": 4197495
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-14.tif",
+      "status": "downloaded",
+      "bytes": 4205087
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-15.tif",
+      "status": "downloaded",
+      "bytes": 4183709
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-16.tif",
+      "status": "downloaded",
+      "bytes": 4175726
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-17.tif",
+      "status": "downloaded",
+      "bytes": 4204010
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-18.tif",
+      "status": "downloaded",
+      "bytes": 4195372
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-19.tif",
+      "status": "downloaded",
+      "bytes": 4356832
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-20.tif",
+      "status": "downloaded",
+      "bytes": 4220528
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-21.tif",
+      "status": "downloaded",
+      "bytes": 4193262
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-22.tif",
+      "status": "downloaded",
+      "bytes": 4305327
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-23.tif",
+      "status": "downloaded",
+      "bytes": 4195147
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-24.tif",
+      "status": "downloaded",
+      "bytes": 4182235
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-25.tif",
+      "status": "downloaded",
+      "bytes": 4178826
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-27.tif",
+      "status": "downloaded",
+      "bytes": 4216906
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-26.tif",
+      "status": "downloaded",
+      "bytes": 4192143
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-28.tif",
+      "status": "downloaded",
+      "bytes": 4162660
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-29.tif",
+      "status": "downloaded",
+      "bytes": 3690403
+    },
+    {
+      "name": "2020/fire_24333000/2020-09-30.tif",
+      "status": "downloaded",
+      "bytes": 3722829
+    },
+    {
+      "name": "2020/fire_24333000/2020-10-01.tif",
+      "status": "downloaded",
+      "bytes": 3679502
+    },
+    {
+      "name": "2019/fire_23159792/2019-07-30.tif",
+      "status": "downloaded",
+      "bytes": 3435843
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-01.tif",
+      "status": "downloaded",
+      "bytes": 3425403
+    },
+    {
+      "name": "2019/fire_23159792/2019-07-31.tif",
+      "status": "downloaded",
+      "bytes": 3444846
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-02.tif",
+      "status": "downloaded",
+      "bytes": 3468806
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-03.tif",
+      "status": "downloaded",
+      "bytes": 3400778
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-05.tif",
+      "status": "downloaded",
+      "bytes": 3448967
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-04.tif",
+      "status": "downloaded",
+      "bytes": 3476855
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-06.tif",
+      "status": "downloaded",
+      "bytes": 3454371
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-07.tif",
+      "status": "downloaded",
+      "bytes": 3543789
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-09.tif",
+      "status": "downloaded",
+      "bytes": 3549336
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-08.tif",
+      "status": "downloaded",
+      "bytes": 3541670
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-10.tif",
+      "status": "downloaded",
+      "bytes": 3577498
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-11.tif",
+      "status": "downloaded",
+      "bytes": 3001129
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-12.tif",
+      "status": "downloaded",
+      "bytes": 3450550
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-13.tif",
+      "status": "downloaded",
+      "bytes": 3395431
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-14.tif",
+      "status": "downloaded",
+      "bytes": 3430036
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-15.tif",
+      "status": "downloaded",
+      "bytes": 3447323
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-16.tif",
+      "status": "downloaded",
+      "bytes": 3447715
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-18.tif",
+      "status": "downloaded",
+      "bytes": 3431006
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-17.tif",
+      "status": "downloaded",
+      "bytes": 3436649
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-19.tif",
+      "status": "downloaded",
+      "bytes": 3450263
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-20.tif",
+      "status": "downloaded",
+      "bytes": 3447213
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-21.tif",
+      "status": "downloaded",
+      "bytes": 3531223
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-22.tif",
+      "status": "downloaded",
+      "bytes": 3479078
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-23.tif",
+      "status": "downloaded",
+      "bytes": 3436877
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-24.tif",
+      "status": "downloaded",
+      "bytes": 3453434
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-25.tif",
+      "status": "downloaded",
+      "bytes": 3464243
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-26.tif",
+      "status": "downloaded",
+      "bytes": 3432753
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-27.tif",
+      "status": "downloaded",
+      "bytes": 3430852
+    },
+    {
+      "name": "2019/fire_23159792/2019-08-28.tif",
+      "status": "downloaded",
+      "bytes": 3436471
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-05.tif",
+      "status": "downloaded",
+      "bytes": 4272978
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-04.tif",
+      "status": "downloaded",
+      "bytes": 4266380
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-07.tif",
+      "status": "downloaded",
+      "bytes": 4272603
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-06.tif",
+      "status": "downloaded",
+      "bytes": 4276304
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-09.tif",
+      "status": "downloaded",
+      "bytes": 3538424
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-08.tif",
+      "status": "downloaded",
+      "bytes": 4255091
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-10.tif",
+      "status": "downloaded",
+      "bytes": 4274291
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-11.tif",
+      "status": "downloaded",
+      "bytes": 4260665
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-13.tif",
+      "status": "downloaded",
+      "bytes": 4277325
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-14.tif",
+      "status": "downloaded",
+      "bytes": 4261833
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-12.tif",
+      "status": "downloaded",
+      "bytes": 4236146
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-15.tif",
+      "status": "downloaded",
+      "bytes": 4227604
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-16.tif",
+      "status": "downloaded",
+      "bytes": 4212541
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-17.tif",
+      "status": "downloaded",
+      "bytes": 4234599
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-19.tif",
+      "status": "downloaded",
+      "bytes": 4213490
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-18.tif",
+      "status": "downloaded",
+      "bytes": 4239158
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-20.tif",
+      "status": "downloaded",
+      "bytes": 4239847
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-21.tif",
+      "status": "downloaded",
+      "bytes": 4277270
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-22.tif",
+      "status": "downloaded",
+      "bytes": 4255311
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-23.tif",
+      "status": "downloaded",
+      "bytes": 4246585
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-24.tif",
+      "status": "downloaded",
+      "bytes": 4242671
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-25.tif",
+      "status": "downloaded",
+      "bytes": 4247461
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-26.tif",
+      "status": "downloaded",
+      "bytes": 4260627
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-28.tif",
+      "status": "downloaded",
+      "bytes": 4276563
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-27.tif",
+      "status": "downloaded",
+      "bytes": 4264313
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-29.tif",
+      "status": "downloaded",
+      "bytes": 4305454
+    },
+    {
+      "name": "2019/fire_22938749/2019-06-30.tif",
+      "status": "downloaded",
+      "bytes": 4292576
+    },
+    {
+      "name": "2019/fire_22938749/2019-07-01.tif",
+      "status": "downloaded",
+      "bytes": 3588616
+    },
+    {
+      "name": "2019/fire_22938749/2019-07-02.tif",
+      "status": "downloaded",
+      "bytes": 4252669
+    },
+    {
+      "name": "2019/fire_22938749/2019-07-03.tif",
+      "status": "downloaded",
+      "bytes": 4277583
+    },
+    {
+      "name": "2019/fire_22938749/2019-07-04.tif",
+      "status": "downloaded",
+      "bytes": 4280611
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-11.tif",
+      "status": "downloaded",
+      "bytes": 2662655
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-12.tif",
+      "status": "downloaded",
+      "bytes": 3024134
+    },
+    {
+      "name": "2019/fire_22938749/2019-07-05.tif",
+      "status": "downloaded",
+      "bytes": 4245424
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-14.tif",
+      "status": "downloaded",
+      "bytes": 3037985
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-13.tif",
+      "status": "downloaded",
+      "bytes": 3013548
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-15.tif",
+      "status": "downloaded",
+      "bytes": 3045178
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-16.tif",
+      "status": "downloaded",
+      "bytes": 3022957
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-17.tif",
+      "status": "downloaded",
+      "bytes": 2969896
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-18.tif",
+      "status": "downloaded",
+      "bytes": 3029515
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-20.tif",
+      "status": "downloaded",
+      "bytes": 3026029
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-21.tif",
+      "status": "downloaded",
+      "bytes": 3046915
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-19.tif",
+      "status": "downloaded",
+      "bytes": 3041211
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-22.tif",
+      "status": "downloaded",
+      "bytes": 3042025
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-24.tif",
+      "status": "downloaded",
+      "bytes": 3021944
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-23.tif",
+      "status": "downloaded",
+      "bytes": 3041340
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-26.tif",
+      "status": "downloaded",
+      "bytes": 2611637
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-25.tif",
+      "status": "downloaded",
+      "bytes": 3029143
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-27.tif",
+      "status": "downloaded",
+      "bytes": 3016483
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-28.tif",
+      "status": "downloaded",
+      "bytes": 3054075
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-30.tif",
+      "status": "downloaded",
+      "bytes": 3073845
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-29.tif",
+      "status": "downloaded",
+      "bytes": 3017014
+    },
+    {
+      "name": "2021/fire_25295808/2021-07-31.tif",
+      "status": "downloaded",
+      "bytes": 3095176
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-01.tif",
+      "status": "downloaded",
+      "bytes": 3098797
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-03.tif",
+      "status": "downloaded",
+      "bytes": 2620135
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-02.tif",
+      "status": "downloaded",
+      "bytes": 3062629
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-05.tif",
+      "status": "downloaded",
+      "bytes": 2981121
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-04.tif",
+      "status": "downloaded",
+      "bytes": 3093144
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-06.tif",
+      "status": "downloaded",
+      "bytes": 2541384
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-07.tif",
+      "status": "downloaded",
+      "bytes": 3031734
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-08.tif",
+      "status": "downloaded",
+      "bytes": 3125111
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-09.tif",
+      "status": "downloaded",
+      "bytes": 3027979
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-10.tif",
+      "status": "downloaded",
+      "bytes": 3022834
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-11.tif",
+      "status": "downloaded",
+      "bytes": 3000034
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-12.tif",
+      "status": "downloaded",
+      "bytes": 2992739
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-13.tif",
+      "status": "downloaded",
+      "bytes": 2674570
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-14.tif",
+      "status": "downloaded",
+      "bytes": 2684021
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-15.tif",
+      "status": "downloaded",
+      "bytes": 2719012
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-16.tif",
+      "status": "downloaded",
+      "bytes": 2213685
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-17.tif",
+      "status": "downloaded",
+      "bytes": 2766394
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-18.tif",
+      "status": "downloaded",
+      "bytes": 2671560
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-19.tif",
+      "status": "downloaded",
+      "bytes": 2715972
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-20.tif",
+      "status": "downloaded",
+      "bytes": 2314314
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-21.tif",
+      "status": "downloaded",
+      "bytes": 3065353
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-22.tif",
+      "status": "downloaded",
+      "bytes": 3028026
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-23.tif",
+      "status": "downloaded",
+      "bytes": 3090860
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-24.tif",
+      "status": "downloaded",
+      "bytes": 3023489
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-25.tif",
+      "status": "downloaded",
+      "bytes": 3039465
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-26.tif",
+      "status": "downloaded",
+      "bytes": 3076516
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-27.tif",
+      "status": "downloaded",
+      "bytes": 3070112
+    },
+    {
+      "name": "2021/fire_25295808/2021-08-28.tif",
+      "status": "downloaded",
+      "bytes": 2950528
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-04.tif",
+      "status": "downloaded",
+      "bytes": 3092535
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-06.tif",
+      "status": "downloaded",
+      "bytes": 2446913
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-05.tif",
+      "status": "downloaded",
+      "bytes": 2832445
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-07.tif",
+      "status": "downloaded",
+      "bytes": 2345827
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-08.tif",
+      "status": "downloaded",
+      "bytes": 2847373
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-09.tif",
+      "status": "downloaded",
+      "bytes": 2833667
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-10.tif",
+      "status": "downloaded",
+      "bytes": 2711444
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-11.tif",
+      "status": "downloaded",
+      "bytes": 2817145
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-13.tif",
+      "status": "downloaded",
+      "bytes": 2753900
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-12.tif",
+      "status": "downloaded",
+      "bytes": 2820155
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-14.tif",
+      "status": "downloaded",
+      "bytes": 2738075
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-15.tif",
+      "status": "downloaded",
+      "bytes": 2707197
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-16.tif",
+      "status": "downloaded",
+      "bytes": 2393676
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-17.tif",
+      "status": "downloaded",
+      "bytes": 2775673
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-18.tif",
+      "status": "downloaded",
+      "bytes": 2736062
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-19.tif",
+      "status": "downloaded",
+      "bytes": 2724405
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-22.tif",
+      "status": "downloaded",
+      "bytes": 2608255
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-21.tif",
+      "status": "downloaded",
+      "bytes": 3079432
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-20.tif",
+      "status": "downloaded",
+      "bytes": 2748112
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-23.tif",
+      "status": "downloaded",
+      "bytes": 3100465
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-24.tif",
+      "status": "downloaded",
+      "bytes": 3103574
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-26.tif",
+      "status": "downloaded",
+      "bytes": 3068636
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-25.tif",
+      "status": "downloaded",
+      "bytes": 3072285
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-27.tif",
+      "status": "downloaded",
+      "bytes": 3112433
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-28.tif",
+      "status": "downloaded",
+      "bytes": 2610242
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-30.tif",
+      "status": "downloaded",
+      "bytes": 3096131
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-29.tif",
+      "status": "downloaded",
+      "bytes": 3102378
+    },
+    {
+      "name": "2021/fire_25411093/2021-08-31.tif",
+      "status": "downloaded",
+      "bytes": 3103661
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-01.tif",
+      "status": "downloaded",
+      "bytes": 2618376
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-03.tif",
+      "status": "downloaded",
+      "bytes": 3100245
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-02.tif",
+      "status": "downloaded",
+      "bytes": 3100541
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-05.tif",
+      "status": "downloaded",
+      "bytes": 3077551
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-06.tif",
+      "status": "downloaded",
+      "bytes": 3080604
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-04.tif",
+      "status": "downloaded",
+      "bytes": 3096439
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-07.tif",
+      "status": "downloaded",
+      "bytes": 3067956
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-08.tif",
+      "status": "downloaded",
+      "bytes": 3087878
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-10.tif",
+      "status": "downloaded",
+      "bytes": 3199027
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-09.tif",
+      "status": "downloaded",
+      "bytes": 3216143
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-11.tif",
+      "status": "downloaded",
+      "bytes": 3090056
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-12.tif",
+      "status": "downloaded",
+      "bytes": 3102179
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-15.tif",
+      "status": "downloaded",
+      "bytes": 3100796
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-14.tif",
+      "status": "downloaded",
+      "bytes": 3086197
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-13.tif",
+      "status": "downloaded",
+      "bytes": 3109076
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-17.tif",
+      "status": "downloaded",
+      "bytes": 3190492
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-18.tif",
+      "status": "downloaded",
+      "bytes": 3216072
+    },
+    {
+      "name": "2021/fire_25411093/2021-09-16.tif",
+      "status": "downloaded",
+      "bytes": 3095846
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-16.tif",
+      "status": "downloaded",
+      "bytes": 3389947
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-17.tif",
+      "status": "downloaded",
+      "bytes": 3380916
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-18.tif",
+      "status": "downloaded",
+      "bytes": 3394279
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-19.tif",
+      "status": "downloaded",
+      "bytes": 3442579
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-20.tif",
+      "status": "downloaded",
+      "bytes": 3503226
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-21.tif",
+      "status": "downloaded",
+      "bytes": 3486787
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-22.tif",
+      "status": "downloaded",
+      "bytes": 3375950
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-23.tif",
+      "status": "downloaded",
+      "bytes": 3406119
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-24.tif",
+      "status": "downloaded",
+      "bytes": 3401821
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-26.tif",
+      "status": "downloaded",
+      "bytes": 2863286
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-25.tif",
+      "status": "downloaded",
+      "bytes": 3404758
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-27.tif",
+      "status": "downloaded",
+      "bytes": 3454755
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-28.tif",
+      "status": "downloaded",
+      "bytes": 3462531
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-31.tif",
+      "status": "downloaded",
+      "bytes": 3443928
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-29.tif",
+      "status": "downloaded",
+      "bytes": 3367692
+    },
+    {
+      "name": "2021/fire_25295855/2021-07-30.tif",
+      "status": "downloaded",
+      "bytes": 3416654
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-03.tif",
+      "status": "downloaded",
+      "bytes": 2883958
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-01.tif",
+      "status": "downloaded",
+      "bytes": 3518688
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-02.tif",
+      "status": "downloaded",
+      "bytes": 3419742
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-05.tif",
+      "status": "downloaded",
+      "bytes": 3415703
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-04.tif",
+      "status": "downloaded",
+      "bytes": 3442119
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-06.tif",
+      "status": "downloaded",
+      "bytes": 2865988
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-07.tif",
+      "status": "downloaded",
+      "bytes": 3515800
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-10.tif",
+      "status": "downloaded",
+      "bytes": 3421231
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-09.tif",
+      "status": "downloaded",
+      "bytes": 3464693
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-08.tif",
+      "status": "downloaded",
+      "bytes": 3523652
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-11.tif",
+      "status": "downloaded",
+      "bytes": 3408169
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-13.tif",
+      "status": "downloaded",
+      "bytes": 2995552
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-12.tif",
+      "status": "downloaded",
+      "bytes": 3407275
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-14.tif",
+      "status": "downloaded",
+      "bytes": 3020628
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-15.tif",
+      "status": "downloaded",
+      "bytes": 3015417
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-16.tif",
+      "status": "downloaded",
+      "bytes": 2449090
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-18.tif",
+      "status": "downloaded",
+      "bytes": 3051520
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-17.tif",
+      "status": "downloaded",
+      "bytes": 3199959
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-19.tif",
+      "status": "downloaded",
+      "bytes": 3128091
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-20.tif",
+      "status": "downloaded",
+      "bytes": 2534196
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-22.tif",
+      "status": "downloaded",
+      "bytes": 3508798
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-21.tif",
+      "status": "downloaded",
+      "bytes": 3557462
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-23.tif",
+      "status": "downloaded",
+      "bytes": 3416599
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-24.tif",
+      "status": "downloaded",
+      "bytes": 3381943
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-25.tif",
+      "status": "downloaded",
+      "bytes": 3368727
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-27.tif",
+      "status": "downloaded",
+      "bytes": 3521462
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-26.tif",
+      "status": "downloaded",
+      "bytes": 3512797
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-28.tif",
+      "status": "downloaded",
+      "bytes": 3405174
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-29.tif",
+      "status": "downloaded",
+      "bytes": 3359197
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-30.tif",
+      "status": "downloaded",
+      "bytes": 3381614
+    },
+    {
+      "name": "2021/fire_25295855/2021-08-31.tif",
+      "status": "downloaded",
+      "bytes": 3422341
+    },
+    {
+      "name": "2021/fire_25295855/2021-09-01.tif",
+      "status": "downloaded",
+      "bytes": 3403781
+    }
+  ],
+  "n_downloaded": 394,
+  "n_skipped": 0,
+  "n_failed": 0,
+  "total_bytes": 1300244769
+}

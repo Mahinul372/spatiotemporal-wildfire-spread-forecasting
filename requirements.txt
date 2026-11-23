@@ -1,0 +1,9 @@
+# Dataset-only requirements (no model code in this repo).
+# Torch is optional: src/data works on numpy alone; install torch only
+# if you want get_dataloader (torch DataLoader).
+numpy>=1.26
+tifffile>=2024.1
+imagecodecs>=2024.1
+PyYAML>=6.0
+remotezip>=0.12  # scripts/download_colab_data.py: HTTP Range extraction
+                 # of single files from the 48 GB Zenodo archive

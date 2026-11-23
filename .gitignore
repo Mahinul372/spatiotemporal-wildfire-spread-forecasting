@@ -1,0 +1,14 @@
+# Raw GeoTIFFs (never commit — fetched by scripts/download_colab_data.py).
+# data/raw/manifest.json and data/processed/*.json ARE committed.
+data/raw/*/*/*.tif
+data/raw/*/*/*.tiff
+*.tif
+*.tiff
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.pkl
+*.pth
+*.npz
+.DS_Store

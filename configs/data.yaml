@@ -1,0 +1,113 @@
+# Data configuration — WildfireSpreadTS next-day active-fire prediction.
+# All figures verified from the 394 raw GeoTIFFs (2026-11-23); see DATA_SPEC.md.
+# Paths are relative to the repository root.
+
+random_seed: 42
+
+dataset:
+  name: WildfireSpreadTS
+  zenodo_record: 8006177
+  doi: 10.5281/zenodo.8006177
+  license: CC BY 4.0
+  zip_url: "https://zenodo.org/api/records/8006177/files/WildfireSpreadTS.zip/content"
+  documentation: "https://zenodo.org/records/8006177"
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  normalization_stats: data/processed/normalization_stats.json
+  samples: data/processed/samples.json
+  class_balance: data/processed/class_balance.json
+
+# Verified raw-file facts:
+#   394 GeoTIFFs, 9 events, one file per event-day, no missing calendar days.
+#   Each file: (H, W, 23), float32, 375 m pixels, UTM. H/W constant within an
+#   event, varies across events (H 297-331, W 208-285).
+#   NoData is NaN (no GDAL NoData tag). Active fire (ch 22) is NaN where no
+#   fire was detected and a value in [806, 2212] where fire was detected.
+raw_channels: 23
+resolution_m: 375
+
+# Event-disjoint, year-based splits (the benchmark's example split).
+splits:
+  train:
+    - "2018/fire_21889943"   # 46 days, 2018-07-23..2018-09-06, 303x211
+    - "2018/fire_21890524"   # 52 days, 2018-07-27..2018-09-16, 304x208
+    - "2020/fire_24332764"   # 46 days, 2020-08-12..2020-09-26, 300x245
+    - "2020/fire_24333000"   # 45 days, 2020-08-18..2020-10-01, 331x270
+  validation:
+    - "2019/fire_23159792"   # 30 days, 2019-07-30..2019-08-28, 311x231
+    - "2019/fire_22938749"   # 32 days, 2019-06-04..2019-07-05, 328x285
+  test:
+    - "2021/fire_25295808"   # 49 days, 2021-07-11..2021-08-28, 305x209
+    - "2021/fire_25411093"   # 46 days, 2021-08-04..2021-09-18, 297x219
+    - "2021/fire_25295855"   # 48 days, 2021-07-16..2021-09-01, 316x228
+
+# Temporal windows. Target is always day t+1 (D); inputs end at D-1.
+# All windows share ONE eligible target-date set: D is eligible only if
+# D-5..D-1 and D all exist (the 5-day restriction). Sample counts are
+# therefore identical across windows: train 169, validation 52, test 128
+# (349 total). Verified from raw files; see data/processed/samples.json.
+windows:
+  E1: {history_days: 1, label: "1-day history (t -> t+1)"}
+  E2: {history_days: 3, label: "3-day history (t-2..t -> t+1)"}
+  E3: {history_days: 5, label: "5-day history (t-4..t -> t+1)"}
+
+# Raw channel order (dataset's own order, 0-based). Target is channel 22.
+channels:
+  - {index: 0,  name: viirs_m11,           group: reflectance}
+  - {index: 1,  name: viirs_i2,            group: reflectance}
+  - {index: 2,  name: viirs_i1,            group: reflectance}
+  - {index: 3,  name: ndvi,                group: vegetation}
+  - {index: 4,  name: evi2,                group: vegetation}
+  - {index: 5,  name: total_precipitation, group: weather}
+  - {index: 6,  name: wind_speed,          group: weather}
+  - {index: 7,  name: wind_direction,      group: weather, angular: true}
+  - {index: 8,  name: min_temperature,     group: weather}
+  - {index: 9,  name: max_temperature,     group: weather}
+  - {index: 10, name: energy_release,      group: fuel}
+  - {index: 11, name: specific_humidity,   group: weather}
+  - {index: 12, name: slope,               group: topography}
+  - {index: 13, name: aspect,              group: topography, angular: true}
+  - {index: 14, name: elevation,           group: topography}
+  - {index: 15, name: pdsi,                group: weather}
+  - {index: 16, name: landcover,           group: landcover, categorical: true}
+  - {index: 17, name: fcst_precipitation,  group: forecast}
+  - {index: 18, name: fcst_wind_speed,     group: forecast}
+  - {index: 19, name: fcst_wind_direction, group: forecast, angular: true}
+  - {index: 20, name: fcst_temperature,    group: forecast}
+  - {index: 21, name: fcst_humidity,       group: forecast}
+  - {index: 22, name: active_fire,         group: target}
+
+target_channel: 22
+
+# Encoded (model-facing) channel layout, per input day. The same 23 raw
+# channels feed every configuration; encoding expands them to 41:
+#   18 standardised continuous + 6 angular sin/cos + 16 land-cover one-hot
+#   + 1 active-fire history. See src/data/preprocessing.py for the exact
+#   order and DATA_SPEC.md for the full channel-name list.
+encoded_channels: 41
+
+# Normalisation (fitted on TRAIN days only; see
+# data/processed/normalization_stats.json for the fitted values):
+#   continuous channels: NaN -> train median, then (x - train mean)/train std
+#     (means/stds exact over all pixels of all 189 train days; medians from a
+#     50,000-pixel/day subsample, seed 42)
+#   angular channels: NaN -> train median angle, then (sin, cos); not standardised
+#   landcover: one-hot over the 16 train-observed classes; unseen class -> all-zero row
+#   active fire: binarised (finite & > 0 -> 1, else 0); not standardised
+normalization:
+  fitted_on: train_only
+  stats_file: data/processed/normalization_stats.json
+  continuous: {method: standardize, fill: train_median}
+  angular: {method: sin_cos, fill: train_median_angle}
+  landcover: {method: one_hot, classes: [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]}
+  active_fire: {method: binarize, fill: 0}
+
+# Class balance over TRAIN TARGET masks only (the pixels the loss sees):
+#   fire 0.3070% (37,394 / 12,181,457), neg/pos = 324.7597.
+#   Validation 0.1152% (neg/pos 866.99), test 0.3807% (neg/pos 261.70).
+#   Full per-event breakdown: data/processed/class_balance.json
+class_balance:
+  train_fire_pct: 0.3070
+  train_neg_over_pos: 324.7597
