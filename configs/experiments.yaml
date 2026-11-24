@@ -1,0 +1,77 @@
+# Experiment grid: 3 architectures x 3 temporal windows = 9 configurations.
+# All configurations share the same data pipeline, splits, target-date sets,
+# input channels (41 encoded), spatial resolution, and target masks — only
+# the architecture and the history length T differ.
+#
+# Input tensor per configuration: (T, C=41, H, W); target: (H, W) uint8 0/1.
+#   E1: T=1, E2: T=3, E3: T=5. H/W vary per event (297-331 x 208-285);
+#   batches are padded to the batch max with a `valid` mask.
+# Sample counts (identical for every configuration): train 169, val 52, test 128.
+#
+# ShearFuse-UNet was dropped by the user's decision on 2026-11-24 (failed
+# all 6 GPU smoke configs: cuFFT half-precision requires power-of-two
+# sizes, got [82, 67]). It is not in this grid; its model file is kept in
+# src/models/ for the record only.
+#
+# Parameter counts are MEASURED with the 41-channel input (local
+# verification pass, 2026-11-24):
+#   TD-FusionUNet: 315,441 (paper claims 370k — see VERIFICATION.md §3)
+#   UTAE (plain, official defaults): 1,147,430 (~1M as shortlisted)
+#   ConvLSTM-UNet (hidden 128): 2,343,074 (inside the 1-3M target)
+
+architectures:
+  td_fusion_unet:
+    name: TD-FusionUNet
+    description: U-Net with trainable Hadamard + DCT transform branches
+    paper: "Luo et al., U-Net with Hadamard Transform and DCT Latent Spaces for Next-day Wildfire Spread Prediction, arXiv:2602.11672"
+    implementation: "Native PyTorch in src/models/td_fusion_unet.py, implemented from the paper (no official code exists); dual HT + DCT branches, trainable transform perceptrons at the bottleneck, temporal attention pooling"
+    pretrained_weights: none  # no official code or released checkpoint exists; trains from scratch
+    params:
+      in_channels: 41
+      widths: [8, 16, 16]     # encoder widths per branch (base width 8, as in the paper)
+      transform_size: 64      # square power-of-two size of the transform perceptron at the bottleneck (covers all bottleneck maps on this data, <=42x36)
+      parameters_total: 315441
+  utae:
+    name: UTAE (plain)
+    description: U-Net with Temporal Attention Encoder (NOT the ResNet18-UTAE variant)
+    paper: "Garnot & Landrieu, Panoptic Segmentation of Satellite Image Time Series with Convolutional Temporal Attention Networks, ICCV 2021, arXiv:2104.11227; TAE from Garnot et al., arXiv:2007.00586"
+    implementation: "Native PyTorch in src/models/utae.py, following the official VSainteuf/utae-paps structure and defaults (encoder [64,64,64,128], decoder [32,32,64,128], LTAE2d n_head=16 d_model=256); single-channel binary head; positional encoding uses relative positions 0..T-1 (see NOTES.md)"
+    pretrained_weights: none  # PASTIS weights are crop-class weights, incompatible; trains from scratch
+    params:
+      in_channels: 41
+      encoder_widths: [64, 64, 64, 128]
+      decoder_widths: [32, 32, 64, 128]
+      parameters_total: 1147430
+  convlstm_unet:
+    name: ConvLSTM-UNet (compact)
+    description: U-Net with a ConvLSTM bottleneck (RecUNet template)
+    paper: "Shi et al., Convolutional LSTM Network, NeurIPS 2015; RecUNet template from VSainteuf/utae-paps"
+    implementation: "Native PyTorch in src/models/convlstm_unet.py (same encoder/decoder as UTAE; single-layer ConvLSTM hidden 128 at the bottleneck, last cell state as embedding, temporal-mean skips)"
+    pretrained_weights: none  # trains from scratch
+    params:
+      in_channels: 41
+      hidden_dim: 128
+      parameters_total: 2343074
+
+windows:
+  E1: {history_days: 1}
+  E2: {history_days: 3}
+  E3: {history_days: 5}
+
+# The 9 configurations (architecture x window). Each entry resolves to:
+#   model: <architecture>, window: <window>, data: configs/data.yaml,
+#   training: configs/training.yaml, seed: 42.
+configurations:
+  - {id: td_fusion_unet_E1, model: td_fusion_unet, window: E1}
+  - {id: td_fusion_unet_E2, model: td_fusion_unet, window: E2}
+  - {id: td_fusion_unet_E3, model: td_fusion_unet, window: E3}
+  - {id: utae_E1, model: utae, window: E1}
+  - {id: utae_E2, model: utae, window: E2}
+  - {id: utae_E3, model: utae, window: E3}
+  - {id: convlstm_unet_E1, model: convlstm_unet, window: E1}
+  - {id: convlstm_unet_E2, model: convlstm_unet, window: E2}
+  - {id: convlstm_unet_E3, model: convlstm_unet, window: E3}
+
+# Output layout (per configuration id):
+#   results/checkpoints/<id>/, results/logs/<id>/,
+#   results/metrics/<id>/, results/figures/<id>/, results/predictions/<id>/

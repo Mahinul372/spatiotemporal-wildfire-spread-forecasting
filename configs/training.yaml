@@ -1,0 +1,190 @@
+# Training configuration — 3 models x 3 windows = 9 configs.
+# Loss and class weights are fixed by the dataset build (TRAIN target
+# masks only). Optimiser / scheduler / batch sizes are chosen for a
+# free Colab Tesla T4 (14.6 GB usable) with AMP, from the MEASURED
+# Colab GPU smoke test (2026-11-24, 33 s run, T4, AMP on, 331x270):
+#   TD-FusionUNet:  E1 b8 0.06s/732MB,  E2 b8 0.16s/1,486MB,  E3 b8 0.24s/2,242MB
+#   UTAE:           E1 b8 0.13s/3,226MB, E2 b8 0.44s/6,463MB, E3 b4 0.22s/5,603MB (b8 10,498MB — too tight)
+#   ConvLSTM-UNet:  E1 b8 0.16s/3,154MB, E2 b8 0.37s/6,279MB, E3 b4 0.35s/5,467MB (b8 9,411MB — too tight)
+# The E3 b8 peaks (9.4-10.5 GB) leave too little headroom once the
+# AdamW optimizer state (~16 bytes/param) and the validation pass are
+# added, so E3 trains at physical batch 4 with 2 accumulation steps.
+# Effective batch is 8 for ALL 9 configs (physical x accumulation),
+# so the comparison is not confounded by batch size.
+# ShearFuse-UNet was dropped by the user's decision on 2026-11-24
+# (failed all 6 GPU smoke configs: cuFFT half-precision needs
+# power-of-two sizes, got [82, 67]) and has no entry here.
+#
+# Tuning policy: at most 3 targeted trials per troubled config,
+# guided by VALIDATION only, never test. No HPO search is built or
+# run; if a config fails or OOMs, apply the documented fallback in
+# `fallbacks` below, record the change, and continue.
+
+random_seed: 42
+
+# ---------------------------------------------------------------------------
+# Loss. Primary loss: weighted binary cross-entropy (BCEWithLogitsLoss)
+# with a single scalar pos_weight. It directly corrects the ~1:325
+# train imbalance with one interpretable parameter, is stable for
+# sparse tiny objects, and is identical for all three architectures
+# (all output single-channel logits). Dice/Focal may be evaluated
+# later as separate experiments, not as the primary loss.
+# ---------------------------------------------------------------------------
+loss:
+  name: weighted_bce
+  module: torch.nn.BCEWithLogitsLoss
+  # pos_weight = neg/pos over TRAIN TARGET masks only (37,394 pos /
+  # 12,144,063 neg over the 169 train target days). Stored in
+  # data/processed/class_balance.json; the trainer cross-checks the
+  # two values and refuses to train on a mismatch. NEVER recompute
+  # from validation or test data.
+  pos_weight: 324.7597
+  # Loss is computed over valid (non-padded) pixels only; the
+  # dataloader returns a `valid` mask for this. Target masks are
+  # (H, W) uint8 0/1.
+  ignore_padded_pixels: true
+
+# Class weights (same information as pos_weight, for reference).
+class_weights:
+  # fire:neg ratio on train target masks, 0.3070% fire.
+  fire_pct_train: 0.3070
+  neg_over_pos_train: 324.7597
+  validation_fire_pct: 0.1152
+  test_fire_pct: 0.3807
+
+# ---------------------------------------------------------------------------
+# Dataloader. Batches are padded to the largest H/W in the batch (H/W
+# vary per event); a boolean `valid` mask marks real pixels. num_workers
+# 2 on Colab: the dataloader reads GeoTIFFs from Drive, so 2 workers
+# hide I/O latency without oversubscribing Colab's 2 vCPUs; local dev
+# uses 0 (single process, avoids spawn overhead on the 1.5-CPU VM).
+# ---------------------------------------------------------------------------
+dataloader:
+  batch_size: 4   # default; per-model / per-config overrides below win
+  num_workers: 0  # CPU-run adaptation (2026-11-24): 0 workers on the
+  # 1.5-CPU local VM avoids worker-process memory + CPU contention;
+  # Colab used 2. Local dev also used 0.
+  shuffle_train: true
+  shuffle_val_test: false
+
+# ---------------------------------------------------------------------------
+# Optimiser — AdamW for all three models (decoupled weight decay suits
+# U-Net / attention models; a single optimiser keeps the comparison
+# clean). LR 1e-3, weight decay 0.01: standard from-scratch
+# segmentation values for these CNN / U-Net-family models.
+# ---------------------------------------------------------------------------
+optimizer:
+  name: adamw
+  lr: 0.001
+  weight_decay: 0.01
+
+per_model:
+  td_fusion_unet:
+    lr: 0.001
+    weight_decay: 0.01
+    batch_size: 8
+    grad_accum_steps: 1
+  utae:
+    lr: 0.001
+    weight_decay: 0.01
+    batch_size: 8
+    grad_accum_steps: 1
+  convlstm_unet:
+    lr: 0.001
+    weight_decay: 0.01
+    batch_size: 8
+    grad_accum_steps: 1
+
+# Per-config overrides. E3 for UTAE and ConvLSTM-UNet drops to physical
+# batch 4 with 2 accumulation steps so the EFFECTIVE batch stays 8
+# (see the smoke-test numbers at the top of this file).
+#
+# CPU-RUN OVERRIDES (2026-11-24, local CPU run — user: "forget Colab"):
+# UTAE and ConvLSTM-UNet cannot run at batch 8 (or 4 for E2/E3) on the
+# 6 GB local VM — the local verification pass OOM-killed UTAE E2/E3 and
+# ConvLSTM E2/E3 at batch 4, and UTAE/ConvLSTM E1 peaked at ~5.0 GB RSS
+# at batch 4. All six configs therefore run at physical batch 2 with 4
+# accumulation steps, so the EFFECTIVE batch stays 8 and the comparison
+# is not confounded by batch size. TD-FusionUNet keeps batch 8 (trial
+# 2026-11-24: peak RSS ~1.9 GB at batch 8). If a config still OOMs,
+# halve the batch and double accumulation, then resume from last.pt.
+per_config:
+  utae_E1: {batch_size: 2, grad_accum_steps: 4}
+  utae_E2: {batch_size: 2, grad_accum_steps: 4}
+  utae_E3: {batch_size: 2, grad_accum_steps: 4}
+  convlstm_unet_E1: {batch_size: 2, grad_accum_steps: 4}
+  convlstm_unet_E2: {batch_size: 2, grad_accum_steps: 4}
+  convlstm_unet_E3: {batch_size: 2, grad_accum_steps: 4}
+
+# ---------------------------------------------------------------------------
+# Scheduler — linear warmup (3 epochs) + cosine decay to 10% of peak LR.
+# Warmup stabilises the first steps of from-scratch training under the
+# 324x pos_weight (early gradients are large); cosine decay is the
+# standard schedule for U-Net segmentation and needs no hand-tuned
+# milestones on a 50-epoch budget.
+# ---------------------------------------------------------------------------
+scheduler:
+  name: warmup_cosine
+  params:
+    warmup_epochs: 3
+    eta_min_fraction: 0.1   # final LR = 10% of peak
+
+# ---------------------------------------------------------------------------
+# Epochs / early stopping — 50-epoch cap, patience 10 on val AP.
+# 169 train samples is tiny, so 50 epochs is already ~1,100 optimiser
+# steps at effective batch 8; early stopping on val AP (the primary
+# metric, threshold-free) with patience 10 stops runaway overfitting
+# while tolerating the noisy validation split (only 52 samples,
+# 0.1152% fire). Monitor is val AP, NOT val loss: with a 324x
+# pos_weight, val loss is dominated by the rare positives and is a
+# worse model-selection signal than AP.
+# ---------------------------------------------------------------------------
+epochs: 50
+early_stopping:
+  patience: 10
+  monitor: validation_ap
+
+# Mixed precision: on (T4, AMP halves activation memory and roughly
+# doubles throughput); the trainer falls back to fp32 automatically
+# on CPU.
+amp: true
+
+# ---------------------------------------------------------------------------
+# Paths. DRIVE_ROOT is the Colab Drive folder holding a full copy of
+# the repo tree (code + data + results); LOCAL paths are relative to
+# the repo root. The trainer/notebook resolve `results_root` from
+# whichever root is in use, so checkpoints, logs and figures always
+# land in <root>/results/{checkpoints,logs,metrics,figures}/<config_id>/.
+# ---------------------------------------------------------------------------
+paths:
+  drive_root: /content/drive/MyDrive/wildfire
+  results_root: results
+  checkpoints: results/checkpoints
+  logs: results/logs
+  metrics: results/metrics
+  figures: results/figures
+  predictions: results/predictions
+
+# ---------------------------------------------------------------------------
+# Fallbacks (apply in order, record the change, do not silently skip):
+#   1. OOM during training -> halve batch_size, double grad_accum_steps
+#      (effective batch unchanged); retry the config from its last
+#      checkpoint. 2. Still OOM -> batch_size 1, grad_accum_steps 8.
+#   3. Still OOM -> defer the config and report it as blocked. Never
+#      silently drop a config: a blocked config stays "pending".
+#   4. NaN loss -> lower LR 10x for that config only, resume from the
+#      last good checkpoint (best.pt), record it.
+# Tuning: max 3 targeted trials per troubled config, validation only.
+# ---------------------------------------------------------------------------
+fallbacks:
+  oom_step_1: {batch_size: "halve", grad_accum_steps: "double"}
+  oom_step_2: {batch_size: 1, grad_accum_steps: 8}
+  nan_loss: {lr: "divide_by_10", resume_from: "best.pt"}
+  max_targeted_trials_per_config: 3
+
+# Thresholding / evaluation decisions:
+#   F1-optimal threshold is selected on VALIDATION data only, never on test.
+#   Fixed 0.5 threshold is always reported alongside.
+evaluation:
+  fixed_threshold: 0.5
+  threshold_selection: validation_only

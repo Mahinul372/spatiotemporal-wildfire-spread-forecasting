@@ -14,7 +14,7 @@ the DataLoader shuffles sample order only within the training split when
 asked, using a torch.Generator seeded with 42. Sample construction is
 fully deterministic (sorted events and dates).
 
-Torch is NOT a hard dependency of this module: it is optional.
+Torch is NOT a hard dependency of this module: it is added in Phase 3.
 Without torch installed, `WildfireDataset` still works as a plain Python
 sequence returning numpy arrays, and `collate_batch` stacks to numpy.
 `get_dataloader` requires torch and raises an informative ImportError until
@@ -37,10 +37,10 @@ from .preprocessing import (
     transform_day,
 )
 
-try:  # torch is optional; the numpy path works without it.
+try:  # torch is added in Phase 3; the numpy path works without it.
     import torch
     from torch.utils.data import DataLoader, Dataset as _TorchDataset
-except ImportError:  # pragma: no cover - exercised when torch is not installed
+except ImportError:  # pragma: no cover - exercised until Phase 3 installs torch
     torch = None
     DataLoader = None
     _TorchDataset = object
@@ -149,7 +149,7 @@ def get_dataloader(
     num_workers: int = 0,
     seed: int = 42,
 ) -> Any:
-    """Build a torch DataLoader (requires torch; optional dependency).
+    """Build a torch DataLoader (requires torch; added in Phase 3).
 
     Shuffling uses a torch.Generator seeded with `seed` so training order
     is reproducible. No shuffling across events is imposed by the dataset;
@@ -157,7 +157,7 @@ def get_dataloader(
     """
     if torch is None or DataLoader is None:
         raise ImportError(
-            "torch is not installed in this environment; it is optional. "
+            "torch is not installed in this environment; it is added in Phase 3. "
             "Use WildfireDataset directly (numpy path) until then."
         )
     generator = torch.Generator()

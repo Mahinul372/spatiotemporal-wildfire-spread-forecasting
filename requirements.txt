@@ -1,9 +1,26 @@
-# Dataset-only requirements (no model code in this repo).
-# Torch is optional: src/data works on numpy alone; install torch only
-# if you want get_dataloader (torch DataLoader).
+# Requirements — verified against the actual imports in src/ (2026-11-23).
+#
+# The model code is native PyTorch: no file under src/ imports timm,
+# einops or torchvision (checked with grep), so they are NOT listed here.
+# timm 1.0.31 was previously listed and is installed in the local venv but
+# UNIMPORTABLE there (torch 2.15.0+cpu vs torchvision 0.29.2 skew —
+# "operator torchvision::nms does not exist"); listing it would break a
+# fresh install on a skewed environment for zero benefit. If a future
+# phase wants the timm MViTv2 backbone, install a MATCHED torch /
+# torchvision pair first and re-run the smoke tests before swapping.
+#
+# On Colab, torch is preinstalled — do NOT reinstall it (the notebook
+# keeps Colab's torch). `pip install -r requirements.txt` therefore
+# installs only the non-torch packages below.
 numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.8
+scikit-learn>=1.5
 tifffile>=2024.1
 imagecodecs>=2024.1
 PyYAML>=6.0
+pytest>=8.0
+torch>=2.2
 remotezip>=0.12  # scripts/download_colab_data.py: HTTP Range extraction
                  # of single files from the 48 GB Zenodo archive
